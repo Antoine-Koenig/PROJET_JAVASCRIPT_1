@@ -1,0 +1,21 @@
+<h1>Peintures</h1>
+<div class="container">
+  <div class="d-flex">
+    <div class="row">
+      <% @paintings.each do |painting| %>
+        <div class="col-6">
+          <%= link_to painting_path(painting) do %>
+            <div class="card-index">
+              <div class="card-image">
+              </div>
+              <div class="card-description">
+                <h5><%= painting.name %>, <%= painting.year %> </h5>
+                <h6><%= painting.artist %>  </h6>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

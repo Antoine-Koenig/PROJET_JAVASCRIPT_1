@@ -17,10 +17,13 @@
       <div class="d-flex justify-content-between col-12">
         <div class="col-6">
           <div>
-            <h4><%= link_to "Home", home_path, class: 'navbar' %></h4>
+            <%= link_to "/", class: 'navbar' do %>
+            <h4>Home</h4>
+            <% end %>
           </div>
         </div>
         <div class="col-6 d-flex justify-content-end justify-content-around">
+          <h4><%= link_to "Peintures", paintings_path, class: 'navbar' %> </h4>
           <h4><%= link_to "Contact", contact_path, class: 'navbar' %></h4>
           <h4><%= link_to "About", about_path, class: 'navbar' %></h4>
         </div>
