@@ -7,7 +7,7 @@
           <%= link_to painting_path(painting) do %>
             <div class="card-index">
               <div class="card-image">
-                <%= cl_image_tag("tugtliavdpppn2koowlm") %>
+                <%= image_tag painting.image %>
               </div>
               <div class="card-description">
                 <h5><%= painting.name %>, <%= painting.year %> </h5>
